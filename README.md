@@ -1,5 +1,5 @@
 # Impact of unsupervised feature selection techniques
-This repository contains the code used in the article titled "The Impact of Unsupervised Feature Selection Techniques on the Performance and Interpretation of Defect Prediction Models."
+This repository contains the code used in the article titled "The Impact of Unsupervised Feature Selection Techniques on the Performance and Interpretation of Defect Prediction Models", which is published in the Journal of *Automated Software Engineering*, authored by Zhiqiang Li, Wenzhi Zhu, Hongyu Zhang, Yuantian Miao, and Jie Ren.
 
 
 ## Prerequisites
@@ -13,11 +13,11 @@ Because some of the unsupervised feature selection algorithms used are implement
 	* ModelConstruction
 	  * partition_dataset.py: Divide the dataset by invoking out-of-sample bootstrap validation techniques.
 	  * fast_bootstrapCV.py: Realization of out-of-sample bootstrap validation techniques.
-	  * SC.py: Implementation of a classifier based on spectral clustering.
-	  * TCL.py: TCL unsupervised classifier.
-	  * CLA.py: CLA unsupervised classifier.
+	  * SC.py: Implementation of an unsupervised model based on spectral clustering.
+	  * TCL.py: TCL unsupervised defect model.
+	  * CLA.py: CLA unsupervised defect model.
 	  * xgb_rfclassifiers.py: Wrapper supervised feature selection of supervised classifiers used in XGBF and RFF.
-	  * ConstructModel.py: Supervised and unsupervised models were constructed using logistic regression, random forest, spectral clustering based and k-means based classifiers and the model performance was evaluated using evaluation metrics AUC,MCC,IFA,Recall@20%.
+	  * ConstructModel.py: Supervised and unsupervised models were constructed using logistic regression, random forest, spectral clustering based and KMedoids based techniques and the model performance was evaluated using evaluation metrics AUC,MCC,IFA,Recall@20%.
 	* ModelEvalution
 	  *  classificationMeasure.py: Non-effort-aware evaluation measures
 	  * rankMeasure.py: Effort-aware evaluation measures
